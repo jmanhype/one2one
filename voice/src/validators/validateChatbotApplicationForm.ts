@@ -15,9 +15,9 @@ export default (values: ChatbotApplicationFormData) => {
     errors.email = "Invalid email address";
   }
 
-  //Attachement
-  if(!values.attachement){
-    errors.attachement = "Required";
+  //Attachment
+  if(!values.attachment){
+    errors.attachment = "Required";
   }
 
   return errors;

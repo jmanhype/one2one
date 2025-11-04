@@ -40,12 +40,12 @@ const ApplicationForm = ({
             initialValues={{
               name: "",
               email: "",
-              attachement: "",
+              attachment: "",
             }}
             validate={(values) => {
               const errors: ChatbotApplicationFormData = validateChatbotApplicationForm(values);
               //TODO: Add a loading indicator
-              //if (errors.email || errors.name || errors.attachement) setIsSending(false);
+              //if (errors.email || errors.name || errors.attachment) setIsSending(false);
 
               return errors;
             }}
@@ -54,7 +54,7 @@ const ApplicationForm = ({
               { setSubmitting }
             ) => {
               //TODO: Send Application form
-              console.log(values);
+              // Implementation needed: Send application form data to backend API
               setSubmitting(false);
             }}
           >
@@ -115,14 +115,14 @@ const ApplicationForm = ({
                         }
                       }}
                       onBlur={handleBlur}
-                      value={values.attachement}
+                      value={values.attachment}
                       className="w-full border-2 border-white/70 rounded-xl p-5 text-white/70"
                     />
 
                     <h4 className="text-red-600 text-[12px] mb-3">
-                      {errors.attachement &&
-                        touched.attachement &&
-                        errors.attachement}
+                      {errors.attachment &&
+                        touched.attachment &&
+                        errors.attachment}
                     </h4>
                   </div>
                   <div className="flex justify-center h-5 mb-10">
