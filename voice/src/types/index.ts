@@ -33,7 +33,7 @@ export type MessageData = {
 export type ChatbotApplicationFormData = {
   name: string;
   email: string;
-  attachement: string | File;
+  attachment: string | File;
 }
 export type ProfileData = {
   firstName: string;
